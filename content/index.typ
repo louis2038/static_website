@@ -3,66 +3,18 @@
 
 = About me
 
-This package allows you to build a simple website with *pure* Typst. No dependencies required.
+I am driven by open-ended research questions and by turning a constant flow of original ideas into concrete research directions. It's start by *Computer Science*, then *Quantum Cryptography* and same *Contextuality* with a lot of philosophical component.
+
+
 
 #margin-note({
-  image("imgs/photo_louis.webp", width: 40%)
+  image("imgs/photo_louis.webp", width: 60%)
 })
 
-#margin-note[
-  The tufted duck (_Aythya fuligula_) is a medium-sized diving duck native to Eurasia. Known for its diving ability, it can plunge to great depths to forage for food.
-]
+#margin-note[It's me]
 
-== Copy template
-
-```shell
-typst init @local/tufted:0.0.1
-```
-
-The template has 4 main components:
-
-- `config.typ` --- Core layout configuration.
-- `content/` --- Stores all website content.
-- `assets/` --- Stores shared static assets, e.g., global CSS.
-- `Makefile` --- Used to build the website.
-
-Pages are independently built with `make`. After you run
-
-```shell
-make html
-```
-
-the HTML will be generated in the `_site/` folder.
-
-== Global configuration
-
-Customize your template in the `config.typ` file, which stores the core layout configuration. Import all definitions from the package, as they will be passed to child pages (this is intended).
-
-```typst
-#import "@local/tufted:0.0.1": *
-
-#let template = tufted-web.with(
-  header-links: (
-    "/": "Home",
-    "/posts/": "Posts",
-    "/about/": "About",
-  ),
-)
-```
-
-== Hierarchy and Inheritance
-
-The website is hierarchical. The root imports from `../config.typ`, while child pages import from their parent's `../index.typ` file, enabling inheritance—no need to import from grandparents.
-
-All `**/index.typ` files inside `content/` become pages accessible via their folder path (e.g., `content/posts/index.typ` → `example.com/posts`). Link to pages using `#link("relative/path/")[Click me]`.
-
-You can modify definitions at any level, and child pages will inherit the changes. For example, to change the page title, import all definitions from a parent and modify the `template`:
-
-```typst
-#import "../index.typ": *
-#show: template.with(title: "New title")
-```
-
-== Deploy
-
-The full website code is in the `_site` folder. You can deploy it, for example, via GitHub Actions. Check #link("https://github.com/vsheg/tufted")[the repo] at `/.github/workflows/deploy.yml` to see how.
+#import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
+#diagram(cell-size: 15mm, $
+	G edge(f, ->) edge("d", pi, ->>) & im(f) \
+	G slash ker(f) edge("ur", tilde(f), "hook-->")
+$)

@@ -10,16 +10,30 @@ html {
     font-size: 10pt;
 }
 
-/* responsive media */
-img,
+/* Responsive media: explicit HTML width/height attributes must not distort images. */
+img {
+    height: auto;
+    max-height: 80vh;
+}
+
 svg {
     max-height: 80vh;
 }
 
-/* basic header + navigation styles */
+/* A compact navigation frame that wraps within the available viewport width. */
+header {
+    margin-top: 1.5rem;
+}
+
 header nav {
-    display: flex;
-    gap: 1em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 /* nav links: remove underline/gradient and add hover bg */
@@ -69,6 +83,9 @@ header nav a:focus-visible,
 
 
 @media (prefers-color-scheme: dark) {
+    header nav {
+        border-color: rgba(255, 255, 255, 0.35);
+    }
 
     header nav a:hover,
     header nav a:focus-visible,
