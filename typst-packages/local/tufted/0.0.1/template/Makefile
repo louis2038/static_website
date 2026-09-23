@@ -4,9 +4,6 @@ TYP_FILES := $(shell find content -name '*.typ' -not -path '*/_*')
 # Generate corresponding HTML file paths in _site/
 HTML_FILES := $(patsubst content/%.typ,_site/%.html,$(TYP_FILES))
 
-# Optional Typst CLI inputs, e.g. TYPST_INPUTS='--input base-url=/static_website'.
-TYPST_INPUTS ?=
-
 # The main target 'html' depends on all generated HTML files and assets
 html: $(HTML_FILES) assets
 
@@ -16,7 +13,7 @@ html: $(HTML_FILES) assets
 # $(@D) is the directory part of the target
 _site/%.html: content/%.typ
 	@mkdir -p $(@D)
-	typst compile --root .. --features html --format html $(TYPST_INPUTS) $< $@
+	typst compile --root .. --features html --format html $< $@
 
 assets:
 	@mkdir -p _site/assets

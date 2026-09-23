@@ -9,5 +9,7 @@
     "/blog/": "Blog",
     "/contact/": "Contact",
   ),
+  // Empty in local development; GitHub Pages supplies /static_website at build time.
+  base-url: sys.inputs.at("base-url", default: ""),
   title: "Tufted",
 )
