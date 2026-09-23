@@ -3,9 +3,11 @@
 
 #let template = tufted-web.with(
   header-links: (
-    "/": "Home",
-    "/posts/": "Posts",
-    "/about/": "About",
+    "/": "About",
+    "/publications/": "Publication",
+    "/teaching": "Teaching",
+    "/blog/": "Blog",
+    "/contact/": "Contact",
   ),
   title: "Tufted",
 )

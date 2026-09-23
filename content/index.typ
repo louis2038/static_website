@@ -1,13 +1,12 @@
 #import "../config.typ": *
 #show: template
 
-= `tufted`: A Simple Typst Website Template
+= About me
 
 This package allows you to build a simple website with *pure* Typst. No dependencies required.
 
 #margin-note({
-  image("imgs/tufted-duck-female-with-duckling.webp")
-  image("imgs/tufted-duck-male.webp")
+  image("imgs/photo_louis.webp", width: 40%)
 })
 
 #margin-note[
