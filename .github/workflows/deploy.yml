@@ -23,8 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: typst-community/setup-typst@v4
-      - run: make html TYPST_INPUTS='--input base-url=/static_website'
-      - uses: actions/configure-pages@v4
+      - id: pages
+        uses: actions/configure-pages@v4
+      - run: make html TYPST_INPUTS="--input base-url=${{ steps.pages.outputs.base_path }}"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
