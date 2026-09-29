@@ -22,4 +22,8 @@ I am currently in first year PhD at *Laboratoire d'Informatique de Grenoble* in 
 
 = Curriculum vitae
 
-Click here to see my #link("https://github.com/louis2038/CV/blob/main/CV_louis_TRIOULEYRE_2026.pdf")[CV].
+Click here to see my #html.a(
+  href: asset-url("res/CV_louis_TRIOULEYRE_2026.pdf"),
+  download: "CV_louis_TRIOULEYRE-ROBERJOT",
+  [*CV*],
+).
