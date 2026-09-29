@@ -7,11 +7,10 @@ I am driven by open-ended research questions and by the challenge of turning a c
 
 
 
-#margin-note({
-  image("imgs/photo_louis.webp", width: 60%)
+#centered-box({
+  image("imgs/photo_louis.webp", width: 100%)
+  [It's me]
 })
-
-#margin-note[It's me]
 
 // #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 // #html.frame(diagram($

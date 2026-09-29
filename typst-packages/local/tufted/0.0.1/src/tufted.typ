@@ -2,7 +2,7 @@
 #import "refs.typ": template-refs
 #import "notes.typ": template-notes
 #import "figures.typ": template-figures
-#import "layout.typ": full-width, margin-note
+#import "layout.typ": centered-box, full-width, margin-note
 
 #let make-header(links, base-url) = html.header(
   html.nav(

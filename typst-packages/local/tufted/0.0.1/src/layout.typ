@@ -10,3 +10,13 @@
 #let full-width(content) = {
   html.div(class: "fullwidth", content)
 }
+
+/// Centers content in a responsive box that occupies at most 80% of its parent.
+/// On HTML targets, `assets/style.css` defines the layout and scales contained images.
+#let centered-box(content) = context {
+  if target() == "html" {
+    html.div(class: "centered-box", content)
+  } else {
+    align(center, block(width: 80%)[#content])
+  }
+}

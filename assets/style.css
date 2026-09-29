@@ -20,6 +20,21 @@ svg {
     max-height: 80vh;
 }
 
+/* Responsive centered content, such as a profile image and its caption. */
+.centered-box {
+    inline-size: min(80%, 32rem);
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.centered-box img {
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    height: auto;
+    margin-inline: auto;
+}
+
 /* A compact navigation frame that wraps within the available viewport width. */
 header {
     margin-top: 1.5rem;
