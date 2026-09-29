@@ -6,7 +6,7 @@
 
 My master 2 report :
 #html.a(
-  href: "../../assets/res/Rapport_ORCO_louisTR.pdf",
+  href: asset-url("res/Rapport_ORCO_louisTR.pdf"),
   download: "Master2_report.pdf",
   [*Contextuality as
   Automata: Open
