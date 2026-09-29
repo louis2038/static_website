@@ -16,5 +16,5 @@
     "/contact/": "Contact",
   ),
   base-url: base-url,
-  title: "Tufted",
+  title: "Louis TRIOULEYRE-ROBERJOT",
 )

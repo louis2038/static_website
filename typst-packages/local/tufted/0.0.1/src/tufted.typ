@@ -25,7 +25,8 @@
       html.meta(charset: "utf-8")
       html.meta(name: "viewport", content: "width=device-width, initial-scale=1")
       html.title(title)
-      // The project copies this stylesheet to _site/assets/ during `make html`.
+      // The project copies this icon and stylesheets to _site/assets/ during `make html`.
+      html.link(rel: "icon", type: "image/svg+xml", href: base-url + "/assets/favicon.svg")
       html.link(rel: "stylesheet", href: base-url + "/assets/tufte.min.css")
       html.link(rel: "stylesheet", href: base-url + "/assets/style.css")
     })

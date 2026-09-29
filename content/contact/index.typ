@@ -12,3 +12,11 @@ Batiment IMAG,
 38400 Saint-Martin-d'Hères
 FRANCE
 ```
+
+= Other links
+
+#import "@preview/orchid:0.1.0"
+#let my-id = "0009-0006-0403-7654"
+
+- You can check my #link("https://github.com/louis2038")[github profile].
+- My ORCID : #orchid.generate-link(my-id, format: "full")

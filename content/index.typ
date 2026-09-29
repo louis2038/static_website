@@ -14,7 +14,6 @@ I am driven by open-ended research questions and by the challenge of turning a c
 // #html.frame(diagram($
 // $))
 
-
 #centered-box({
   image("imgs/photo_louis.webp", width: 50%)
   [It's me]
