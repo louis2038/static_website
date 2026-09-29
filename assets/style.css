@@ -20,19 +20,26 @@ svg {
     max-height: 80vh;
 }
 
-/* Responsive centered content, such as a profile image and its caption. */
+/* Center content within the same text column as Tufte's section paragraphs. */
 .centered-box {
-    inline-size: min(80%, 32rem);
-    margin: 1.5rem auto;
+    inline-size: 55%;
+    margin: 1.5rem 0;
     text-align: center;
 }
 
 .centered-box img {
     display: block;
-    inline-size: 100%;
+    inline-size: min(80%, 32rem);
     max-inline-size: 100%;
     height: auto;
     margin-inline: auto;
+}
+
+/* Tufte's paragraphs expand to the full column on narrow viewports. */
+@media (max-width: 760px) {
+    .centered-box {
+        inline-size: 100%;
+    }
 }
 
 /* A compact navigation frame that wraps within the available viewport width. */

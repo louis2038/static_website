@@ -1,23 +1,24 @@
 #import "../config.typ": *
 #show: template
 
+
 = About me
 
-I am driven by open-ended research questions and by the challenge of turning a constant flow of ideas into concrete research directions. My interests began with computer science, then expanded to quantum cryptography and even contextuality
+*Louis #smallcaps[TRIOULEYRE-ROBERJOT]*, currently in first year PhD at *Laboratoire d'Informatique de Grenoble* in #link("https://capp.imag.fr/lig-capp.imag.fr/")[*CAPP*] team and *Laboratoire Jean Kuntzmann* in #link("https://cas3c3.imag.fr/")[$"CAS"^3 "C"^3$].
+
+I am driven by open-ended research questions and by the challenge of turning a constant flow of ideas into concrete research directions. My interests began with computer science, then expanded to quantum cryptography and even contextuality.
 
 
-
-#centered-box({
-  image("imgs/photo_louis.webp", width: 100%)
-  [It's me]
-})
 
 // #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge
 // #html.frame(diagram($
 // $))
 
-I am currently in first year PhD at *Laboratoire d'Informatique de Grenoble* in #link("https://capp.imag.fr/lig-capp.imag.fr/")[*CAPP*] team and *Laboratoire Jean Kuntzmann* in #link("https://cas3c3.imag.fr/")[$"CAS"^3 "C"^3$].
 
+#centered-box({
+  image("imgs/photo_louis.webp", width: 50%)
+  [It's me]
+})
 
 = Curriculum vitae
 
