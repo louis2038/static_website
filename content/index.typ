@@ -15,7 +15,7 @@ I am driven by open-ended research questions and by the challenge of turning a c
 // $))
 
 #centered-box({
-  image("imgs/photo_louis.webp", width: 50%)
+  image("imgs/photo_louis2.webp", width: 50%)
   [It's me]
 })
 
